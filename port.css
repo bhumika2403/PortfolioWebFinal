@@ -1,0 +1,472 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    padding-top: 120px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    justify-content: center;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    min-height: 100vh;       /* Full viewport height */
+    margin: 0;               /* Remove default margin */
+    background-image: url(bgimg.webp);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    background-attachment: fixed;
+    scroll-margin-top: 2px;
+}
+section{
+    scroll-margin-top: 150px;
+}
+h2{
+    text-align: center;
+    text-decoration: solid;
+    color: #101010;
+    text-decoration: underline;
+    font-size: xx-large;
+}
+.container {
+    width: 80%;            
+    padding-top: 150px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;                 /* Align to the top */
+    left: 0;                /* Align to the left */
+    width: 100%;            /* Full-width header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    z-index: 1000;          /* Ensure it stays on top */
+    background-color: #101010;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+    margin-bottom: 10px;    /* Only one margin-bottom */
+}
+
+
+
+/* General Styling for Contact Section */
+#contact ul {
+    list-style: none;
+    padding: 0;
+    align-items: center;
+}
+#contact
+{
+    
+    h2{
+color: #e3f2fd;
+    }
+    color: #e3f2fd;
+    background-color: #01164e;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#contact ul li {
+    margin: 10px 0;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon Styling */
+#contact ul li i {
+    margin-right: 10px;
+    color: #0076b5; /* Default color */
+    transition: color 0.3s, transform 0.3s; /* Smooth hover transition */
+}
+
+/* Link Styling */
+#contact ul li a {
+    align-items: center;
+    text-decoration: none;
+    color: #ffffff; /* Default text color */
+    transition: color 0.3s; /* Smooth hover transition */
+}
+
+/* Hover Effects */
+#contact ul li:hover i {
+    color: #63fffc; /* Change icon color on hover */
+    transform: scale(1.5); /* Slightly enlarge the icon */
+}
+
+#contact ul li:hover a {
+    color: #63fffc; /* Change link color on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    list-style: none;
+    padding: 10px 0;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Card Styling */
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #87e3ef;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 100px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.card-container {
+   
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+/* Hover effect */
+.card:hover {
+    transform: translateY(+10px); /* Card moves down when hovered */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+.card img {
+    width: 120px; /* Smaller image size */
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: block;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1.1rem;
+}
+
+.card a {
+    color: #333;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #00bcd4;
+}
+
+/* Profile Section */
+#profile-pic {
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    border: solid 10px #101010;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Contact Section */
+ul {
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+ul li {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* About Section - Slightly Different Background Color */
+#about {
+    h2{
+        font-size: 2.5rem;
+        color: #acfffe;
+    }
+    padding: 40px 0;
+    font-style: italic;
+    color: rgb(184, 255, 230);
+    font-size: larger;
+    h1{
+        font-size: 3rem;
+        color:rgb(184, 255, 230)
+    }
+}
+#aboutpara
+{
+    color: rgb(184, 255, 230);
+}
+/* Education Section - Background Color */
+#education {
+    h2{
+        color: #e3f2fd;
+        font-family: cursive;
+        padding-bottom:10px ;
+    }
+    background-image: url(eduback.avif);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+   
+}
+
+#education .card-container {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Skills Section */
+#skills {
+    h2{
+        color: #e3f2fd;
+        font-family: cursive;
+        padding-bottom:10px ;
+    }
+    background-image: url(skillsbg.jpeg);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+ 
+}
+
+#skills .card-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* Achievements Section */
+#achievements {
+    h2{
+        color: #e3f2fd;
+        font-family: cursive;
+        padding-bottom:10px ;
+    }
+    background-image: url(achievementimg.jpg);
+background-size: 100% 100% ;
+background-repeat: no-repeat;
+background-position-x: center;
+}
+
+#achievements .card-container {
+    display: flex;
+   
+    justify-content: space-between;
+}
+#contacts.card-container
+{
+    align-items: center;
+    align-content: center;
+}
+
+/* Experience Section */
+#experience {
+    h2{
+        color: #e3f2fd;
+        font-family: cursive;
+        padding-bottom:10px ;
+    }
+    background-image: url(expimg.jpg);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    background-position-x: center;
+  
+}
+
+#projects{
+    h2{
+        color: #e3f2fd;
+        font-family: cursive;
+        padding-bottom:10px ;
+    }
+background-image: url(projbg.jpg);
+background-size: 100% 100% ;
+background-repeat: no-repeat;
+background-position-x: center;
+}
+
+footer {
+    background-color: #171717;  
+    color: #fff; 
+    text-align: center; 
+    padding: 10px; 
+    margin: 0; 
+    width: calc(100vw); /* Full viewport width */
+    position: relative; 
+    left: 0; /* Aligns the footer to the left edge */
+    transform: translateX(-50%);
+    left: 50%; /* Center-aligned to avoid shifts */
+    box-sizing: border-box; /* Ensures padding doesn't exceed width */
+}
+
+/* Footer Paragraph */
+footer p {
+    font-size: 1rem;
+    height: 50px;
+    margin: 0; 
+    line-height: 50px; 
+    width: 100lvw;
+}
+ /* General styles for all screens */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+  
+  /* Responsive styles for tablets and larger screens */
+  @media (min-width: 768px) {
+    .container {
+      width: 75%;
+    }
+  
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+  
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+  }
+  @media (max-width: 767px) {
+    /* Navbar adjustments for mobile */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Body background size */
+    body {
+        background-size: 100% 100%;
+    }
+
+    /* Content flex direction */
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Outer cards (like Education, Projects, Achievements, etc.) */
+    .card {
+        width: 200%; /* Ensure outer card takes full width */
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px; /* Add spacing between sections */
+    }
+
+    /* Card container inside each section */
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Inner cards inside the card container */
+    .card-container .card {
+        width: 100%; /* Inner cards take full width on mobile */
+        margin-bottom: 15px; /* Space between cards */
+        box-sizing: border-box;
+    }
+
+    /* For specific sections like education, projects, achievements, etc. */
+    #education .card,
+    #projects .card,
+    #achievements .card,
+    #experience .card,
+    #skills .card {
+        width: 100%; /* Ensure these sections take full width */
+        padding: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    }
+
+    /* For inner cards within each section */
+    #education .card-container .card,
+    #projects .card-container .card,
+    #achievements .card-container .card,
+    #experience .card-container .card,
+    #skills .card-container .card {
+        width: 50%; /* Full width for inner cards on mobile */
+        margin-bottom: 20px; /* Add space between cards */
+    }
+
+    /* Optional: You can adjust the text and content spacing for better readability */
+    .card h3 {
+        font-size: 1.5rem; /* Adjust heading size for mobile */
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 1rem; /* Adjust paragraph size */
+        margin-bottom: 10px;
+    }
+    #skills .card-container,
+    #achievements .card-container {
+        justify-content: center; /* Center cards horizontally */
+        align-items: center; /* Center cards vertically */
+    }
+}
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
